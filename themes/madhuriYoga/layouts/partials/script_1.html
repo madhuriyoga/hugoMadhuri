@@ -1,0 +1,23 @@
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 80) {
+            document.querySelector(".navtext").classList.add('text-lg');
+            document.querySelector(".navimage").classList.remove('py-5');
+            document.querySelector(".navimage").classList.add('py-2');
+            document.querySelector(".logoimg").classList.remove('h-16');
+            document.querySelector(".logoimg").classList.add('h-10');
+
+        } else {
+            document.querySelector(".navtext").classList.remove('text-lg');
+            document.querySelector(".navimage").classList.remove('py-2');
+            document.querySelector(".navimage").classList.add('py-5');
+            document.querySelector(".logoimg").classList.remove('h-10');
+            document.querySelector(".logoimg").classList.add('h-16');
+        }
+    }
+</script>

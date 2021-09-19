@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="text-gray-600 body-font mt-8">
+    <div class="container max-w-3xl px-8 pt-4 pb-6 mx-auto">
+        <p>{{.Params.author}}, <span class="pl-2">{{.Params.date | time.Format "January 2, 2006"}}</span></p>
+        <h2 class="text-4xl mt-4 font-bold">{{.Title}}</h2>
+        {{- with .Params.cover -}}<img class="mx-auto mt-4 object-cover object-center"
+            src="{{- . | relURL -}}">{{- end -}}
+        <div class="mt-4 text-lg markdown">
+            {{.Content | markdownify }}
+        </div>
+        <!-- share -->
+        <div class="mt-12 mx-auto w-1/2 flex justify-around">
+            <p>Share this article!</p>
+        </div>
+
+        {{- partial "share.html" . -}}
+
+        {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+        {{- if and (gt (len $pages) 1) (in $pages . ) }}
+        <div class="mt-12 flex justify-between">
+            <div>
+                {{- with $pages.Next . }}
+                <a class="prev" href="{{ .Permalink }}">
+                    <span class="title">« {{ "previous" }}</span>
+                    <br>
+                    <span class="text-xl hover:text-mbrown">{{- .Name -}}</span>
+                </a>
+                {{- end }}
+            </div>
+            <div>
+                {{- with $pages.Prev . }}
+                <a class="next" href="{{ .Permalink }}">
+                    <span class="title">{{ "next" }} »</span>
+                    <br>
+                    <span class="text-xl hover:text-mbrown">{{- .Name -}}</span>
+                </a>
+                {{- end }}
+            </div>
+        </div>
+        {{- end }}
+    </div>
+</section>
+{{- partial "zohoform.html" . -}}
+{{ end }}

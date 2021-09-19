@@ -1,0 +1,256 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/images/heart.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+
+        * {
+            font-family: 'Amaranth', cursive;
+            font-weight: 500;
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        .markdown ul {
+            list-style-type: circle;
+            margin-top: 1.5rem;
+            font-weight: 400;
+            list-style-position: inside;
+
+        }
+
+        .markdown ol {
+            list-style: decimal;
+            margin-top: 1.5rem;
+            font-weight: 400;
+            list-style-position: inside;
+        }
+
+
+        .markdown p {
+            margin-top: 1.5rem;
+        }
+
+        .markdown blockquote {
+            border-left: solid 5px brown;
+            padding-left: 20px;
+        }
+    </style>
+
+    <!--Zoho Campaigns Web-Optin Form's Header Code Starts Here-->
+
+    <script type="text/javascript" src="https://zc1.maillist-manage.in/js/optin.min.js"
+        onload="setupSF('sf3z97deff4b41b735c3b3050081ae507b1568f60730884f6020c128d551e178e7ed','ZCFORMVIEW',false,'light',false,'0')">
+    </script>
+    <script type="text/javascript">
+        function runOnFormSubmit_sf3z97deff4b41b735c3b3050081ae507b1568f60730884f6020c128d551e178e7ed(th) {
+            /*Before submit, if you want to trigger your event, "include your code here"*/
+        };
+    </script>
+
+    <style>
+        ::-webkit-input-placeholder {
+            color: rgb(62, 62, 62)
+        }
+    </style>
+
+    <style>
+        .container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+        }
+
+        .container1 .box {
+            width: 230px;
+            height: 160px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container1 .box .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 30px;
+        }
+
+        .container1 .box .title .block {
+            width: 0%;
+            height: inherit;
+            background: #FFCC29;
+            position: absolute;
+            animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container1 .box .title h1 {
+            color: black;
+            font-size: 24px;
+            -webkit-animation: mainFadeIn 2s forwards;
+            -o-animation: mainFadeIn 2s forwards;
+            animation: mainFadeIn 2s forwards;
+            animation-delay: 1.6s;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            text-align: center;
+        }
+
+        .container1 .box .title1 {
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 30px;
+        }
+
+        .container1 .box .title1 .block {
+            width: 0%;
+            height: inherit;
+            background: #81B214;
+            position: absolute;
+            animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+            animation-delay: 2s;
+            display: flex;
+        }
+
+        .container1 .box .title1 h1 {
+            animation: secFadeIn 2s forwards;
+            animation-delay: 3.2s;
+            opacity: 0;
+            font-size: 24px;
+            font-weight: 400;
+            color: black;
+        }
+
+        .container1 .box .title2 {
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 30px;
+        }
+
+        .container1 .box .title2 .block {
+            width: 0%;
+            height: inherit;
+            background: #6E2F2F;
+            position: absolute;
+            animation: thrBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+            animation-delay: 4s;
+            display: flex;
+        }
+
+        .container1 .box .title2 h1 {
+            animation: thrFadeIn 2s forwards;
+            animation-delay: 5.2s;
+            opacity: 0;
+            font-size: 24px;
+            font-weight: 400;
+            color: black;
+        }
+
+
+        @keyframes mainBlock {
+            0% {
+                width: 0%;
+                left: 0;
+            }
+
+            50% {
+                width: 100%;
+                left: 0;
+            }
+
+            100% {
+                width: 0;
+                left: 100%;
+            }
+        }
+
+        @keyframes secBlock {
+            0% {
+                width: 0%;
+                left: 0;
+            }
+
+            50% {
+                width: 100%;
+                left: 0;
+            }
+
+            100% {
+                width: 0;
+                left: 100%;
+            }
+        }
+
+        @keyframes thrBlock {
+            0% {
+                width: 0%;
+                left: 0;
+            }
+
+            50% {
+                width: 100%;
+                left: 0;
+            }
+
+            100% {
+                width: 0;
+                left: 100%;
+            }
+        }
+
+        @keyframes mainFadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes secFadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes thrFadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <!--Zoho Campaigns Web-Optin Form's Header Code Ends Here-->
+
+</head>
