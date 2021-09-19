@@ -18,15 +18,56 @@
         html {
             scroll-behavior: smooth
         }
-         .logo{
-            width:25%;
-         }
 
-         @media only screen and (max-device-width : 480px) {
-            .logo{
-            width:75%;
-         }
-}
+        .logo {
+            width: 25%;
+        }
+
+        @media only screen and (max-device-width : 480px) {
+            .logo {
+                width: 75%;
+            }
+
+            .form {
+                width: 90vw;
+            }
+
+            .first-row {
+                flex-direction: column;
+            }
+
+            .form .w-1-2 {
+                width: 100%;
+            }
+
+            input#email{
+                width: 90vw;
+                margin-bottom: 10px;
+            }
+
+            input#name{
+                width: 90vw;
+                margin-bottom: 10px;
+            }
+        }
+
+        .form {
+            display: flex;
+            width: 60%;
+            justify-content: center;
+        }
+
+        .first-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .form .w-1-2 {
+            width: 49%;
+        }
+
+
         .markdown ul {
             list-style-type: circle;
             margin-top: 1.5rem;
