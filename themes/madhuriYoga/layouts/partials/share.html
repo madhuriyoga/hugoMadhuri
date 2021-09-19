@@ -1,6 +1,6 @@
 <div class="mt-4 text-2xl md:text-3xl mx-auto w-full md:w-1/2 flex justify-around">
     <a target="_blank" rel="noopener noreferrer" aria-label="share {{ .Title| plainify }} on facebook"
-        href="https://facebook.com/sharer/sharer.php?u={{ .Permalink}}">
+        href='https://facebook.com/sharer/sharer.php?href={{ .Permalink }}'>
         <i class="bi bi-facebook hover:text-mbrown"></i>
     </a>
 
@@ -15,7 +15,7 @@
     </a>
 
     <a target="_blank" rel="noopener noreferrer" aria-label="share {{ .Title| plainify }} on whatsapp"
-        href="https://api.whatsapp.com/send?text={{ .Title}}%20-%20{{ .Permalink}}">
+        href="https://api.whatsapp.com/send?text={{ .Title}}%20-%20{{ .Permalink }}">
         <i class="bi bi-whatsapp hover:text-mbrown"></i>
     </a>
 
