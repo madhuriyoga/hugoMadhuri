@@ -20,4 +20,4 @@ In the ancient times we did not have to practice yoga as a separate activity. Th
 
 Yoga is much beyond physical fitness. It is way more than weight loss. It is pure science being portrayed in the form of art. And a way of life! ❤️
 
-{{ < youtube wjQ7soNqYZo > }}
+{{< youtube wjQ7soNqYZo >}}
